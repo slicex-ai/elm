@@ -1,0 +1,15 @@
+{
+    "inputs": [
+        "New neurons for life? Old people can still make fresh brain cells, study finds",
+        "Quips is an AI to help ALS patients speak with their own voice",
+        "Lucid beats Tesla Model S Plaid prototype on racetrack with its own tri-motor Air test vehicle",
+        "Inside Virgin Hyperloop, I caught a glimpse of a high-speed transport future",
+        "Speed up your website in 15 minutes (Sponsor)",
+        "Scientists Invent 'Invisible' Metamaterial With Bonus Reflect Mode",
+        "Kings of Leon Will Be the First Band to Release an Album as an NFT",
+        "In Rural Fukushima, 'The Border Between Monkeys And Humans Has Blurred'",
+        "Scientists May Have Discovered The First Planet Orbiting Three Stars At Once",
+        "Eat Less Red Meat, Scientists Said. Now Some Believe That Was Bad Advice"
+    ],
+    "template": "[INST]The following headline is the headline of a news report. Please write the content of the news passage based on only this headline.\n\nHeadline: {input} \n\nContent:[/INST]"
+}
