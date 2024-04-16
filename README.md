@@ -45,12 +45,12 @@ git lfs install
 
 ## (Optional) Setup docker
 ```bash
-docker run --gpus all -it --shm-size=8g --name elm_inference --ulimit memlock=-1 --rm -v <elm-v0.1_code_path>:/elm_code  nvcr.io/nvidia/pytorch:23.09-py3
+docker run --gpus all -it --shm-size=8g --name elm_inference --ulimit memlock=-1 --rm -v <elm-v0.1_code_path>:/elm-v0.1  nvcr.io/nvidia/pytorch:23.09-py3
 ```
 
 ## Installation
 ```bash
-cd <elm_code>
+cd elm-v0.1
 pip install -r requirements.txt
 ```
 
