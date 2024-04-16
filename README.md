@@ -17,7 +17,7 @@ _Fast Inference with Customization:_ Once trained, the ELM model architecture pe
 
 - **Demo** (try it out): https://huggingface.co/spaces/slicexai/elm-demo-v1
 
-- **HuggingFace** (access Model cards, code & app from HF): https://huggingface.co/slicexai
+- **HuggingFace** (access ELM Model cards, code & app from HF): https://huggingface.co/slicexai
 
 ## ELM-v0.1 Model Release
 This repository contains code to run our ELM models. The current ELM model `elm-v0.1` was pre-trained (an intermediate checkpoint was used) and then instruction fine-tuned for downstream tasks.
