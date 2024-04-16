@@ -1,4 +1,4 @@
-# Copyright (c) 2024, SliceX AI, Inc. All Rights Reserved.
+# Copyright (c) 2024, SliceX AI, Inc.
 
 import streamlit as st
 import json
