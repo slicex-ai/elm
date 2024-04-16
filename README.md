@@ -29,10 +29,16 @@ Models are located in the `models` folder. ELM models in this repository comes i
 - news_summarization
 
 ## Download ELM repo with model files
+# Download
 ```bash
 sudo apt-get intall git-lfs 
 git lfs install
 git clone https://github.com/slicex-ai/elm-v0.1
+```
+# Installation
+```bash
+cd elm-v0.1
+pip install -r requirements.txt
 ```
 (Optional) Installing git-lfs without sudo,
 ```bash
@@ -42,16 +48,9 @@ PATH=$PATH:/<absolute-path>/git-lfs-3.2.0/
 git lfs install
 ```
  
-
-## (Optional) Setup docker
+## Chat with ELM via Streamlit app ![alt text](image.png){ width: 50px; }
 ```bash
-docker run --gpus all -it --shm-size=8g --name elm_inference --ulimit memlock=-1 --rm -v <elm-v0.1_code_path>:/elm-v0.1  nvcr.io/nvidia/pytorch:23.09-py3
-```
-
-## Installation
-```bash
-cd elm-v0.1
-pip install -r requirements.txt
+streamlit run app.py --server.port 8011 
 ```
 
 ## How to use: Run ELM on a sample task (e.g., news classification)
@@ -76,8 +75,7 @@ Running the above command returns the following response
     "response": "{'text_label': 'Business'}"
 }
 ```
-
-## Chat with ELM via Streamlit app
+## (Optional) Setup docker
 ```bash
-streamlit run app.py --server.port 8011 
+docker run --gpus all -it --shm-size=8g --name elm_inference --ulimit memlock=-1 --rm -v <elm-v0.1_code_path>:/elm-v0.1  nvcr.io/nvidia/pytorch:23.09-py3
 ```
