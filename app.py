@@ -6,7 +6,6 @@ import base64
 import os
 from elm.infer_elm_for_demo_app import load_elm_model_given_path, generate_elm_responses
 st.set_page_config(layout="wide")
-DOWNLOAD_MODEL_ENV_VARIABLE = 'DOWNLOAD_ELM_MODELS'
 ##########
 ##HEADER##
 ##########
@@ -60,26 +59,8 @@ def get_preloaded_prompts(elm_model_path):
         raise ValueError("Unsupported use-case")
 
 def path_given_model_name(elm_model_path):
-    return f"/data/models/{elm_model_path}"
+    return f"models/{elm_model_path}"
 
-def download_models_from_repo():
-    git_lfs_install = "git lfs install"
-    os.system(git_lfs_install)
-    clone_command = f"git clone https://{os.environ['USER_NAME']}:{os.environ['GIT_TOKEN']}@huggingface.co/slicexai/elm-v0.1"
-    os.system(clone_command)
-    clean_command = "rm -rf /data/*"
-    os.system(clean_command)
-    cp_command = "cp -r elm-v0.1/models /data"
-    os.system(cp_command)
-    print(os.listdir("/data/models"))
-
-
-if DOWNLOAD_MODEL_ENV_VARIABLE in os.environ:
-    with st.status("Downloading models..."):
-        print("Downloading repo")
-        download_models_from_repo()
-        print(f"Exiting now. Remove {DOWNLOAD_MODEL_ENV_VARIABLE} from variables in settings and restart the space.")
-        import sys; sys.exit()
 
 # model_list = [
 #     "elm-1.0_news_classification",
