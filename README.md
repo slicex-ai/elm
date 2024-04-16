@@ -76,3 +76,8 @@ Running the above command returns the following response
     "response": "{'text_label': 'Business'}"
 }
 ```
+
+## Chat with ELM via Streamlit app
+```bash
+streamlit run app.py --server.port 8011 
+```
