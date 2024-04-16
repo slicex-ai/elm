@@ -28,7 +28,7 @@ Models are located in the `models` folder. ELM models in this repository comes i
 - news_content_generation
 - news_summarization
 
-## Download and install ELM
+## Setup ELM
 
 ### Download ELM repo with model files
 ```bash
@@ -76,7 +76,7 @@ Running the above command returns the following response
     "response": "{'text_label': 'Business'}"
 }
 ```
-## (Optional) Setup docker container to install & run ELM
+## (Optional) Setup docker container to run ELM
 ```bash
 docker run --gpus all -it --shm-size=8g --name elm_inference --ulimit memlock=-1 --rm -v <elm-v0.1_code_path>:/elm-v0.1  nvcr.io/nvidia/pytorch:23.09-py3
 ```
