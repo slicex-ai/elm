@@ -48,7 +48,7 @@ PATH=$PATH:/<absolute-path>/git-lfs-3.2.0/
 git lfs install
 ```
  
-## Chat with ELM via Streamlit app ![alt text](image.png){ width: 50px; }
+## Chat with ELM via Streamlit app
 ```bash
 streamlit run app.py --server.port 8011 
 ```
