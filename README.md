@@ -5,7 +5,7 @@
   <img src="elm-rambutan.png" width="256"/>
 </div>
 
-ELM is designed to be a modular and customizable family of neural networks that are highly efficient and performant. Today we are sharing the first version in this series: **ELM-v0.1** models. 
+ELM is designed to be a modular and customizable family of neural networks that are highly efficient and performant. Today we are sharing the first version in this series: **ELM-v0.1** models (named _Rambutan_). 
 
 _Model:_ ELM introduces a new type of _(de)-composable LLM model architecture_ along with the algorithmic optimizations required to learn (training) and run (inference) these models. At a high level, we train a single ELM model in a self-supervised manner (during pre-training phase) but once trained the ELM model can be sliced in many ways to fit different user/task needs. The optimizations can be applied to the model either during the pre-training and/or fine-tuning stage. 
 
