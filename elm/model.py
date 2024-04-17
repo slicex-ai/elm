@@ -338,6 +338,8 @@ def init_elm_model(model_args=ModelArgs(), device="cuda", model_config_dict=None
         model_args = ModelArgs(**model_config_dict)
 
     dtype = torch.bfloat16 if device=="cuda" and torch.cuda.is_available() and torch.cuda.is_bf16_supported() else torch.float16
+    if not torch.cuda.is_available():
+        dtype = torch.bfloat16
 
     model = ELM(model_args=model_args).to(dtype=dtype)
 
