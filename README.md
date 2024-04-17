@@ -38,6 +38,7 @@ sudo apt-get install git-lfs
 git lfs install
 sh download_models.sh
 ```
+For Macbook, replace `sudo apt-get install git-lfs` with `brew install git-lfs`
 ### Installation
 ```bash
 pip install -r requirements.txt
