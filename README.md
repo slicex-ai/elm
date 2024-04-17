@@ -39,6 +39,9 @@ git lfs install
 sh download_models.sh
 ```
 For Macbook, replace `sudo apt-get install git-lfs` with `brew install git-lfs`
+```note
+NOTE: Please allow a few minutes for the full download of all model checkpoints.
+```
 ### Installation
 ```bash
 pip install -r requirements.txt
