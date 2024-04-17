@@ -1,3 +1,4 @@
+#!/bin/bash
 git lfs install
 TEMP_REPO="temp"
 MODELS_FOLDER="models"
