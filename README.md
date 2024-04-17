@@ -2,7 +2,7 @@
 **ELM** (which stands for **E**fficient **L**anguage **M**odels) is the first version in the series of cutting-edge language models from [SliceX AI](https://slicex.ai) that is designed to achieve the best in class performance in terms of _quality_, _throughput_ & _memory_.
 
 <div align="center">
-  <img src="https://github.com/slicex-ai/bazaar2/blob/master/public_releases/v1/logo.png" width="256"/>
+  <img src="logo.png" width="256"/>
 </div>
 
 ELM is designed to be a modular and customizable family of neural networks that are highly efficient and performant. Today we are sharing the first version in this series: **ELM-v0.1** models. 
