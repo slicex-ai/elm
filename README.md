@@ -20,7 +20,7 @@ _Fast Inference with Customization:_ Once trained, the ELM model architecture pe
 - **HuggingFace** (access ELM Model cards, code & app from HF): https://huggingface.co/slicexai
 
 ## ELM-v0.1 Model Release
-This repository contains code to run our ELM models. The current ELM model `elm-v0.1` was pre-trained (an intermediate checkpoint was used) and then instruction fine-tuned for downstream tasks.
+This repository contains code to run our ELM models. The current ELM model `elm-v0.1` (named _Rambutan_) was pre-trained (an intermediate checkpoint was used) and then instruction fine-tuned for downstream tasks.
 
 Models are located in the `models` folder. ELM models in this repository comes in three sizes (elm-1.0, elm-0.75 and elm-0.25) and supports the following use-cases.
 - news_classification
