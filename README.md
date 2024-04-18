@@ -22,11 +22,13 @@ _Fast Inference with Customization:_ Once trained, the ELM model architecture pe
 ## ELM-v0.1 Model Release
 This repository contains code to run our ELM models. The current ELM model `elm-v0.1` (named _Rambutan_) was pre-trained (an intermediate checkpoint was used) and then instruction fine-tuned for downstream tasks.
 
-Models are located in the `models` folder. ELM models in this repository comes in three sizes (elm-1.0, elm-0.75 and elm-0.25) and supports the following use-cases.
+Models are located in the `models` folder. ELM models in this repository comes in three sizes (elm-1.0, elm-0.75 and elm-0.25). **All these different slices are extracted from the same ELM finetuned checkpoint for inference** and supports the following use-cases.
 - news_classification
 - toxicity_detection
 - news_content_generation
 - news_summarization
+
+**NOTE: ELM-v0.1 is an early version finetuned from an intermediate pretrained checkpoint & without any KV caching, decoding optimizations, or quantization applied.**
 
 ## Setup ELM
 
