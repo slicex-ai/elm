@@ -38,7 +38,6 @@ st.markdown(
     <div class="container">
         <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
         <p class="logo-text">SliceX AI™ ELM (Efficient Language Models)</p>
-        <p>  </p>
     </div>
     """,
     unsafe_allow_html=True
