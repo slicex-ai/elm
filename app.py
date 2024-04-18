@@ -38,10 +38,14 @@ st.markdown(
     <div class="container">
         <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
         <p class="logo-text">SliceX AI™ ELM (Efficient Language Models)</p>
+        <p>  </p>
     </div>
     """,
     unsafe_allow_html=True
 )
+with st.container(border=False, height=100):
+         st.markdown(""":blue[ELM (family of Efficient Language Models) is the first version in the series of cutting-edge language models from <a href="https://slicex.ai/">:blue[SliceX AI]</a> that is designed to be modular and achieve the best in class performance in terms of quality, throughput & memory. This demo showcases a few ELM-v0.1 models (named Rambutan) from the first release. To learn more :point_right: <a href="https://medium.com/sujith-ravi/introducing-elm-efficient-customizable-privacy-preserving-llms-cea56e4f727d">:violet[ELM blog post]</a>]
+         """, unsafe_allow_html=True)
 ##########
 ##HEADER##
 ##########
@@ -83,8 +87,7 @@ def path_given_model_name(elm_model_path):
 use_case_list = [
     "news_classification",
     "news_content_generation",
-    "toxicity_detection",
-    "news_summarization"
+    "toxicity_detection"
 ]
 
 model_size_list = [
