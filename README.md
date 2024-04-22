@@ -13,7 +13,7 @@ _Fast Inference with Customization:_ Once trained, the ELM model architecture pe
 
 - **Blog:** [Medium](https://medium.com/sujith-ravi/introducing-elm-efficient-customizable-privacy-preserving-llms-cea56e4f727d)
 
-- **Github:** https://github.com/slicex-ai/elm-v0.1
+- **Github:** https://github.com/slicex-ai/elm
 
 - **Demo** (try it out): https://huggingface.co/spaces/slicexai/elm-demo-v1
 
