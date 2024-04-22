@@ -34,8 +34,8 @@ Models are located in the `models` folder. ELM models in this repository comes i
 
 ### Download ELM repo with model files
 ```bash
-git clone https://github.com/slicex-ai/elm-v0.1
-cd elm-v0.1
+git clone https://github.com/slicex-ai/elm
+cd elm
 sudo apt-get install git-lfs 
 git lfs install
 sh download_models.sh
